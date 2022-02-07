@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WEBFORM_NEW.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>DMART</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="CSS.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>**GMART**</h1>
+    <form id="form1" runat="server">
+        <div>
+            
+            <nav id ="nav">
+
+             <ul>
+                    <li><a href="Home.aspx">HOME</a></li>
+                    <li><a href="GROCERIES.aspx">GROCERIES</a></li>
+                    <li><a href="CLOTHES.aspx">CLOTHES</a></li>
+                    <li><a href="ELECTRONICS.aspx">ELECTRONICS</a></li>
+		            <li><a href="COSMETICS.aspx">COSMETICS</a><li>
+		            <li><a href="FOOD.aspx">FOOD</a><li>
+		            <li><a href="BOOKS.aspx">BOOKS</a><li>
+		        
+                </ul>
+                </nav>
+
+            
+            <div id="footer">
+                
+                    <ul>
+                    <li><a href="LOGIN.aspx">LOGIN</a></li>
+                    <li><a href="SIGNUP.aspx">SIGNUP</a></li>
+                    <li><a href="LOGOUT.aspx">LOGOUT</a></li>
+
+                    </ul>
+                     
+                
+   
+</div>
+            
+            <asp:ContentPlaceHolder ID="BodyContentPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
