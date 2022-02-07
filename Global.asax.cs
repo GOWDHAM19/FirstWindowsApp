@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Security;
 using System.Web.SessionState;
 
-namespace Web_Session
+namespace WebApplication_uc2
 {
     public class Global : System.Web.HttpApplication
     {

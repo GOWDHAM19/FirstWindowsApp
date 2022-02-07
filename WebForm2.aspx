@@ -1,4 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="Web_Session.WebForm2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="WebApplication_uc2.WebForm2" %>
+
+
+
 
 <!DOCTYPE html>
 
@@ -9,11 +12,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="Label1" runat="server" Text="UserName"></asp:Label>
-            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-            <br />
-            <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
-            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+            <uc1:UserControl1 runat="server" id="UserControl1" />
         </div>
     </form>
 </body>
