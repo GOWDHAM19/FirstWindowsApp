@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace WEBFORM_NEW
+namespace VALIDATION
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
