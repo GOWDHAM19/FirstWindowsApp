@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="VALIDATION.Global" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Web_Session.Global" Language="C#" %>

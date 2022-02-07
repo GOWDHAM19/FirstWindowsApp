@@ -7,21 +7,21 @@ using System.Web.UI.WebControls;
 
 namespace Web_Session
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class WebForm3 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if(!IsPostBack == false)
+            {
+                Label1.Text = "Haii";
+
+            }    
             
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            
-            Session["hai"] = TextBox1.Text;
-            Session["hlo"] = TextBox2.Text;
-            Response.Redirect("WebForm2.aspx");
-
+            Label1.Text = TextBox1.Text;
         }
     }
 }

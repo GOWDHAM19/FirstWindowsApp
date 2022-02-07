@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="VALIDATION.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="Web_Session.WebForm1" %>
 
 <!DOCTYPE html>
 
@@ -9,20 +9,11 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="RequiredFieldValidatorERROR"></asp:RequiredFieldValidator>
+            <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" />
             <br />
-            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-            <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TextBox2" ControlToValidate="TextBox3" ErrorMessage="CompareValidatorERROR"></asp:CompareValidator>
-            <br />
-            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox><br />
-            <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox4" ErrorMessage="RegularExpressionValidatorERROR" ValidationExpression="http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&amp;=]*)?"></asp:RegularExpressionValidator>
-            <br />
-            <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
-            <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="TextBox5" ErrorMessage="RangeValidatorERROR" MaximumValue="100" MinimumValue="10" Type="Integer"></asp:RangeValidator>
-            <br />
-            <asp:Button ID="Button1" runat="server" Text="Button" />
+            <asp:Label ID="Label1" runat="server" Text="UserName"></asp:Label>    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+             <br />
+            <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>   <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
         </div>
     </form>
 </body>
